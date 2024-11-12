@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "description": "requestのqueryパラメータを返すサンプル",
+    "scenario": "サンプル"
+  },
+  "request": {
+    "method": "GET",
+    "urlPath": "/api/example"
+  },
+
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "message": "Hello, {{request.query.name}}!"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "transformers": ["response-template"]
+  }
+}

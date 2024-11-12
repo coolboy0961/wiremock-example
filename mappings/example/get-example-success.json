@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "description": "固定の応答を返すサンプル",
+    "scenario": "サンプル"
+  },
+  "request": {
+    "method": "GET",
+    "url": "/api/example"
+  },
+
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "message": "Hello, WireMock!"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
